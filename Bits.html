@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Data To Bits</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel="icon" href="assets/binary-code.png">
+    </head>
+    <body>
+        <br>
+        <h1 style="color: aqua;">Convert Data To Bits</h1>
+        <br><br>
+        <div class="division">
+            <div>
+                <br><br>
+                <label>Data:</label>
+                <input type="text" placeholder="Enter Data" autocomplete="off" name="Data" id="ti1" required>
+                <br>
+                <br>
+                <button onclick="convert();">Convert</button>
+            </div>
+    </div>
+    <input hidden id="ti2" convert>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <p  id="demo" style="color: aqua"></p>
+    <script>
+    function convert() {
+        var output = document.getElementById("ti2");
+        var input = document.getElementById("ti1").value;
+        output.value = "";
+        for (var i = 0; i < input.length; i++) {
+            output.value += input[i].charCodeAt(0).toString(2) + " ";
+        }
+        document.getElementById("demo").innerHTML = output.value;
+    }
+     </script>
+</body>
+</html>

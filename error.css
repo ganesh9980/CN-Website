@@ -1,0 +1,15 @@
+.container{
+    margin : 0 580px;
+    background-color:#f4f4f4;
+    padding: 20px;
+}
+body{
+    text-align: center;
+    background-image: url('assets/error.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#demo{
+    font-size:50px;
+}
